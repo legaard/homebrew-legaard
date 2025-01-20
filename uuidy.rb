@@ -5,20 +5,20 @@
 class Uuidy < Formula
   desc "A small CLI tool for working with UUIDs"
   homepage "https://github.com/legaard/uuidy"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/legaard/uuidy/releases/download/v0.1.0/uuidy_Darwin_x86_64.tar.gz"
-      sha256 "2b7d38c057dbc81f2d6d92ecb3643f22b5909a64ba955c48b8e884d225bacf2c"
+      url "https://github.com/legaard/uuidy/releases/download/v0.2.0/uuidy_Darwin_x86_64.tar.gz"
+      sha256 "95fbcec8db0703bb079bc54aa7b1a100e08c6d33f45b30e77cc37edaa5cba4d7"
 
       def install
         bin.install "uuidy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/legaard/uuidy/releases/download/v0.1.0/uuidy_Darwin_arm64.tar.gz"
-      sha256 "5c9947ddde98b5d8e5c7f2a61b9d6d3ecd415c5e5aef745b8e2bdff9a203b19c"
+      url "https://github.com/legaard/uuidy/releases/download/v0.2.0/uuidy_Darwin_arm64.tar.gz"
+      sha256 "8eda9075526ab9bdd398fff1a4d7feaa1737baa53946ae8fd9b41bc1edc8106d"
 
       def install
         bin.install "uuidy"
@@ -29,8 +29,8 @@ class Uuidy < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/legaard/uuidy/releases/download/v0.1.0/uuidy_Linux_x86_64.tar.gz"
-        sha256 "64b51d62105faafd33031f5e664a70b7e3dd642311fa1658e002466e2349c276"
+        url "https://github.com/legaard/uuidy/releases/download/v0.2.0/uuidy_Linux_x86_64.tar.gz"
+        sha256 "2b124a8e448e3a1fc180c889ddabdea16f5a0fd6bca5cea81266ab4455684236"
 
         def install
           bin.install "uuidy"
@@ -39,8 +39,8 @@ class Uuidy < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/legaard/uuidy/releases/download/v0.1.0/uuidy_Linux_arm64.tar.gz"
-        sha256 "53b6b9e68d309e3aa2f517f3f2fb1701fb690458ed6b0b5cfebf5c53b70cf7d7"
+        url "https://github.com/legaard/uuidy/releases/download/v0.2.0/uuidy_Linux_arm64.tar.gz"
+        sha256 "ae46bea519fb619a073d7b3a816e0e32758b3d30e974b8ff915517ddc98d553e"
 
         def install
           bin.install "uuidy"
